@@ -6,7 +6,7 @@
 body{
   padding: 0;
   margin: 0;
-  background-color: #4C394F;
+  background-color: #423965;
   overflow-x: hidden;
   font-family: 'Noto Sans', sans-serif;
   font-family: 'Roboto', sans-serif;
@@ -17,6 +17,8 @@ body{
   --light: #ecf0f1;
   --muted: #95a5a6;
   --secondary: #2c3e50;
+  --purple: #423965;
+  --dark-purple: #373258;
 }
 
 .lh-1{
@@ -24,6 +26,12 @@ body{
 }
 .text-light {
   color: #ecf0f1;
+}
+.mt-5{
+  margin-top: 4rem;
+}
+.mt-3{
+  margin-top: 1rem;
 }
 .mb-3 {
   margin-bottom: 1rem;
@@ -33,6 +41,12 @@ body{
 }
 .bg-transparent{
   background-color: transparent !important;
+}
+.bg-dark-purple{
+  background-color: var(--dark-purple) !important;
+}
+.bg-purple{
+  background-color: var(--purple) !important;
 }
 .btn{
   background-color: #ecf0f1;
@@ -46,6 +60,36 @@ body{
   margin: 4px 2px;
   cursor: pointer;
   border-radius: 5px;
+}
+.d-flex{
+  display: flex;
+}
+.justify-content-center{
+  justify-content: center;
+}
+.justify-content-between{
+  justify-content: space-between;
+}
+.align-items-center{
+  align-items: center;
+}
+
+.card{
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+.card-body{
+  padding: 20px;
+}
+
+.main-content{
+  padding-top: 100px;
+  width: 100vw;
+  max-width: 1255px;
+  margin: auto;
+  z-index: 200;
 }
 .parallax {
   background-image: url("images/parallax.jpg");
@@ -105,8 +149,6 @@ body{
   z-index: 100;
   border-bottom: 1px solid;
   border-color: #ffffff1c;
-}
-.header.bg-transparent{
   color: var(--light);
 }
 .header > .right > ul{
@@ -132,4 +174,26 @@ body{
 .header > .right > ul > li.active > a{
   opacity: 1;
   color: #ffffff;
+}
+
+.gallery{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.gallery > .gallery-data{
+  width: 33.333333%;
+  padding: .5rem;
+  transition: .4s;
+  z-index: 0;
+}
+.gallery > .gallery-data:hover{
+  transform: scale(1.05);
+  z-index: 1;
+}
+.gallery > .gallery-data > img{
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  object-position: center;
 }
