@@ -3,6 +3,10 @@
   padding: 0; 
   box-sizing:border-box; 
 }
+@font-face {
+  font-family: "Noto Sans";
+  src: url(font/NotoSans-Regular.ttf);
+}
 body{
   padding: 0;
   margin: 0;
@@ -10,7 +14,6 @@ body{
   background-color: #B1A9CE;
   overflow-x: hidden;
   font-family: 'Noto Sans', sans-serif;
-  font-family: 'Roboto', sans-serif;
 }
 
 /* Root variable Css */
