@@ -6,8 +6,8 @@
 body{
   padding: 0;
   margin: 0;
-  /* background-color: #423965; */
-  background-color: var(--dark-purple);
+  /* background-color: var(--dark-purple); */
+  background-color: #B1A9CE;
   overflow-x: hidden;
   font-family: 'Noto Sans', sans-serif;
   font-family: 'Roboto', sans-serif;
@@ -19,9 +19,16 @@ body{
   --muted: #95a5a6;
   --secondary: #2c3e50;
   --purple: #423965;
+  --soft-purple: #8478b5;
   --dark-purple: #373258;
 }
 
+.bg-soft-purple{
+  background-color: var(--soft-purple) !important;
+}
+.opacity-5{
+  opacity: .5;
+}
 .lh-1{
   line-height: 1;
 }
@@ -177,6 +184,9 @@ body{
   border-color: #ffffff1c;
   color: var(--light);
 }
+.header.header-bg{
+  background-color: var(--soft-purple);
+}
 .header > .right > ul{
   display: flex;
   list-style: none;
@@ -240,7 +250,7 @@ body{
   left: 0;
   height: 25px;
   width: 100vw;
-  background-color: var(--purple);
+  background-color: var(--soft-purple);
 }
 
 .contact > .contact-list{
