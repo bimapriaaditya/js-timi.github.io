@@ -49,6 +49,15 @@ body{
 .bg-purple{
   background-color: var(--purple) !important;
 }
+.m-3{
+  margin: 1rem;
+}
+.text-center{
+  text-align: center;
+}
+.text-muted{
+  color: var(--muted);
+}
 .btn{
   background-color: #ecf0f1;
   border: none;
@@ -216,4 +225,38 @@ body{
   height: 25px;
   width: 100vw;
   background-color: var(--purple);
+}
+
+.contact > .contact-list{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.contact > .contact-list > .contact-data{
+  text-decoration: none;
+  width: 25%;
+  height: 250px;
+  padding: .5rem;
+}
+.contact > .contact-list > .contact-data > .card{
+  width: 100%;
+  height: 100%;
+}
+.contact .flower{
+  left: 0;
+}
+.contact .flower,
+.contact .chibi{
+  position: fixed;
+  bottom: 0;
+  transform: translate(0, 50px);
+}
+.contact .chibi{
+  left: unset !important;
+  right: 0;
+}
+.contact .flower > img,
+.contact .chibi > img{
+  width: 250px;
 }
