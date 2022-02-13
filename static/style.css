@@ -128,7 +128,23 @@ body{
   width: 100%;
   color: var(--light);
   padding: 1.25rem 2.8rem;
+  opacity: 0;
+  visibility: hidden;
+  animation: fadeIn 1s ease-in-out forwards 1s 1;
 }
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-25%);
+  }
+  100% {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(-50%);
+  }
+}
+
 .parallax > .parallax-content > .heaader-wrapper{
   line-height: 1;
   border-bottom: 3px solid;
