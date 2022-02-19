@@ -1,0 +1,17 @@
+.profile .user-wrapper{
+  margin-right: 100px;
+}
+.profile .user-wrapper > .user-img{
+  object-fit: cover;
+  object-position: center;
+  width: 500px;
+}
+
+.simple-footer{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  height: 25px;
+  width: 100vw;
+  background-color: var(--soft-purple);
+}
